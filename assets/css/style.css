@@ -57,3 +57,43 @@
         height: 250px;
     }
 }
+/* Fondo ligeramente más oscuro que la sección de servicios */
+.bg-contact {
+    background-color: #f0f2f5; /* Un gris un poco más profundo que #f8f9fa */
+    border-top: 1px solid #dee2e6;
+}
+
+/* Restricción de tamaño para el textarea */
+.no-resize {
+    resize: none; /* Esto evita que el usuario pueda arrastrar la esquina y cambiar el tamaño */
+}
+
+/* Espaciado extra para dispositivos móviles */
+@media (max-width: 991px) {
+    #contacto .col-lg-6:first-child {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+.footer-custom {
+    background-color: rgb(25, 43, 100);
+}
+
+/* Efecto hover para los enlaces del footer */
+.footer-custom a:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* Ajuste de borde para separar las filas */
+.footer-custom .border-bottom {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* En móvil, los textos se centran automáticamente gracias a las clases de Bootstrap */
+@media (max-width: 767px) {
+    .footer-custom h5 {
+        margin-top: 1rem;
+    }
+}
