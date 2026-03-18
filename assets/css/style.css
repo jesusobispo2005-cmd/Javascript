@@ -97,3 +97,11 @@
         margin-top: 1rem;
     }
 }
+
+.botoncito {
+  background-color: rgb(68, 68, 68);
+}
+
+.boton_oscuro {
+    background-color: aqua;
+}
