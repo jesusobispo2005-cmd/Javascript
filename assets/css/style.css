@@ -2,3 +2,19 @@
     margin: 0px;
     padding: 0px;
 }
+.hero {
+    /* Ruta de tu imagen y overlay oscuro para que el texto resalte */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('https://www.bmw.com/content/dam/bmw/marketBMWCOM/bmw_com/categories/automotive-life/nxm/naming2.jpg') no-repeat center center;
+    
+    background-size: cover; /* Hace que la imagen cubra todo el espacio */
+    height: 90vh;           /* 90% de la altura de la pantalla */
+    min-height: 500px;      /* Altura mínima para que no se vea aplastado en móviles */
+}
+
+/* Ajuste opcional para pantallas muy pequeñas */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
