@@ -18,3 +18,42 @@
         font-size: 2.5rem;
     }
 }
+
+/* Color de fondo ligeramente diferente al header (bg-light) */
+.bg-light-custom {
+    background-color: #f8f9fa; /* Puedes cambiarlo a #f0f2f5 para más contraste */
+    border-top: 1px solid #e9ecef;
+}
+
+/* Espaciado interno para que no se pegue al Hero */
+#servicios {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* Ajuste para que las imágenes no sean gigantes en móviles */
+@media (max-width: 991px) {
+    .row {
+        margin-bottom: 3rem !important;
+    }
+    img {
+        max-width: 80%; /* Centra visualmente mejor en móvil */
+    }
+}
+
+/* Clase para uniformizar las imágenes de los servicios */
+.img-servicio {
+    width: 100%;           /* Ocupa todo el ancho de su columna de Bootstrap */
+    height: 350px;         /* Define una altura fija igual para todas */
+    object-fit: cover;     /* Mantiene la proporción y recorta el exceso (como un fondo) */
+    object-position: center; /* Asegura que el centro de la imagen sea lo que se vea */
+    border-radius: 15px;   /* Bordes redondeados para que se vea moderno */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Ajuste para móviles: podemos reducir un poco la altura si se ve muy grande */
+@media (max-width: 768px) {
+    .img-servicio {
+        height: 250px;
+    }
+}

@@ -1,64 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Landing Page</title>
-    
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
 
-  <header class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
         <div class="logo">
-            <a href="#" class="navbar-brand">
-                <img src="https://www.pngarts.com/files/3/Logo-Transparent-Image.png" alt="Logo de mi marca" height="80">
-            </a>
+          <a href="#" class="navbar-brand">
+            <img
+              src="https://www.pngarts.com/files/3/Logo-Transparent-Image.png"
+              alt="Logo de mi marca"
+              height="80"
+            />
+          </a>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
-            <span class="navbar-toggler-icon"></span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuNavegacion"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="menuNavegacion">
-            <nav class="mx-auto"> <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+          <nav class="mx-auto">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </nav>
 
-            <div class="cta">
-                <a href="#registro" class="btn btn-primary">¡Empieza ahora!</a>
-            </div>
+          <div class="cta">
+            <a href="#registro" class="btn btn-primary">¡Empieza ahora!</a>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<main>
-        <section class="hero d-flex align-items-center">
-            <div class="container text-center text-white">
-                <div class="row justify-content-center">
-                    <div class="col-md-8">
-                        <h1 class="display-3 fw-bold mb-4">Descubre el nuevo BMW</h1>
-                        <p class="lead mb-5">Conoce todas las caracteristicas que tiene este coche.
-                        </p>
-                        <a href="#registro" class="btn btn-primary btn-lg px-5 py-3">¡Empieza ahora!</a>
-                    </div>
-                </div>
+    <main>
+      <section class="hero d-flex align-items-center">
+        <div class="container text-center text-white">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <h1 class="display-3 fw-bold mb-4">Descubre el nuevo BMW</h1>
+              <p class="lead mb-5">
+                Conoce todas las caracteristicas que tiene este coche.
+              </p>
+              <a href="#registro" class="btn btn-primary btn-lg px-5 py-3"
+                >¡Empieza ahora!</a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="py-5 bg-light-custom">
+        <div class="container">
+          <h2 class="text-center mb-5 fw-bold">Nuestros Servicios</h2>
+
+          <div class="row align-items-center mb-5">
+            <div class="col-lg-6 text-center">
+              <img
+                src="https://www.automotiverhythms.com/wp-content/uploads/2023/01/2024-BMW-M3-CS-grille.jpeg"
+                alt="Servicio 1"
+                class="img-fluid rounded shadow img-servicio"
+              />
+            </div>
+            <div class="col-lg-6 text-center text-lg-start mt-4 mt-lg-0">
+              <h3 class="h4">BMW 2024-BMW-M3-CS-grille</h3>
+              <p class="text-muted">
+                Más rápido, más ligero y más potente.
+              </p>
+            </div>
+          </div>
+
+          <div class="row align-items-center flex-lg-row-reverse mb-5">
+            <div class="col-lg-6 text-center">
+              <img
+                src="https://cdn.motor1.com/images/mgl/mpKYq/s3/bmw-ix3-2020.jpg"
+                alt="Servicio 2"
+                class="img-fluid rounded shadow img-servicio"
+              />
+            </div>
+            <div class="col-lg-6 text-center text-lg-end mt-4 mt-lg-0">
+              <h3 class="h4">BMW-ix3-2020</h3>
+              <p class="text-muted">
+                primer SUV eléctrico de la marca alemana
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
