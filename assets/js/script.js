@@ -1,10 +1,21 @@
 const btn_darkM = document.getElementById("dark_mode");
-const cta = document.getElementById("cta")
 
-console.log(cta)
-// darkMode.className="boton_oscuro"
-btn_darkM.addEventListener("click", ()=>{
-    console.log("pepito");
-    cta.style.backgroundColor='blue';
-    btn_darkM.className="boton_oscuro";
-})
+
+if (localStorage.getItem("darkMode") === "true") {
+    document.body.classList.add("dark-mode");
+    btn_darkM.textContent = "Modo Claro";
+}
+
+
+btn_darkM.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "true");
+        btn_darkM.textContent = "Modo Claro";
+    } else {
+        localStorage.setItem("darkMode", "false");
+        btn_darkM.textContent = "Modo Oscuro";
+    }
+});
